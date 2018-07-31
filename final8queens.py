@@ -1,7 +1,6 @@
 import random
 import sys
 
-
 class Solver_8_queens(object):
 
     def __init__(self, pop_size=100, cross_prob=0.5, mut_prob=0.25):
@@ -14,8 +13,6 @@ class Solver_8_queens(object):
         self.epoch_num = 0
         self.visualization=""
         self.pop = [[[self.randomize(ROWS,COLS) for COLS in range(cols)] for ROWS in range(rows)]for POP_SIZE in range(pop_size)]
-
-
 
     def randomize(self,rows,cols):
         if cols == 0:
